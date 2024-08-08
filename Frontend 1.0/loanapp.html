@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Application Form</title>
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-image: url("./Assets/4.jpg");
+        margin: 0;
+        padding: 20px;
+        font-size: 15px;
+        opacity: 95%;
+    }
+    .App_container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #8ec8dd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-color: white;
+        border-style:double;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    /* Nav-Footer */
+    .logo{
+            width: 40%;
+            height: 15%;
+            /* border: 1px solid red; */
+            margin-bottom: -100px;
+            margin-top: -100px;
+            margin-right: 100px;
+        }
+        #BG_img1{
+            width: 100%;
+            height: 50%;
+            
+        }
+        h1{
+            font-size: 40px;
+        }
+        /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-70%, 110%);
+}
+/* -------------Partner------------------- */
+.partners {
+  padding: 10px;
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    background-position: 385000px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    background-position: 385000px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+.partners-img-container {
+  height: 100px;
+  width: 100%;
+  overflow: auto;
+}
+
+.partners-img-container::-webkit-scrollbar { width: 0 !important } /* hide scrollbar in Chrome */
+.partners-img-container { scrollbar-width: none; } /* hide scrollbar in mozilla */
+.partners-img-container { -ms-overflow-style: none; } /* hide scrollbar in IE */
+
+.partners-img-container .partners-img {
+  height: 100%;
+  width: 200%;
+  background: transparent url(https://squeeze-pics.s3-us-west-2.amazonaws.com/v2/assets/Web+Assets/heroes/Auto-insurance/insurancelogos.jpg) repeat-x 50% 0;
+  -webkit-animation: slideleft 5000s linear infinite;
+  animation: slideleft 5000s linear infinite;
+  cursor: grab;
+}
+
+    
+    
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"> <img src="./Assets/logo.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <!-- <a class="navbar-brand" href="index.html"> <img src="./Asset/logo.png" class="logo" alt=""></a> -->
+          <form class="form-inline my-2 my-lg-0">
+            <div><a class="dropdown-item" href="./signin.html">Login</a></div>
+          </form>
+        </div>
+      </nav>
+    <!-- <center><img src="logo.png" alt="Alternate Text" width="200" height="100" title="Image "></center> -->
+<div class="App_container">
+    <h2>Loan Application</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="loan-type">Loan Type</label>
+            <select id="loan-type" name="loan-type" required>
+                <option value="">Select Loan Type</option>
+                <option value="personal">Personal Loan</option>
+                <option value="home">Home Loan</option>
+                <option value="car">Car Loan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="loan-amount">Loan Amount</label>
+            <input type="number" id="loan-amount" name="loan-amount" required>
+        </div>
+        <div class="form-group">
+            <label for="loan-term">Loan Term (months)</label>
+            <input type="number" id="loan-term" name="loan-term" required>
+        </div>
+        <div class="form-group">
+            <label for="yearly-income">Current Yearly Income</label>
+            <input type="number" id="yearly-income" name="yearly-income" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth (MM/DD/YY)</label>
+            <input type="text" id="dob" name="dob" placeholder="Enter date in MM/DD/YY format" required>
+        </div>
+        <div class="form-group">
+            <label for="maritalStatus">Marital Status</label>
+            <select id="maritalStatus" name="maritalStatus" required>
+                <option value="">Select your marital status</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="employmentStatus">Employment Status</label>
+            <select id="employmentStatus" name="employmentStatus" required>
+                <option value="">Select your employment status</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+                <option value="retired">Retired</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+            <label for="privacyPolicy">I confirm that I agree to the Privacy Policy</label>
+        </div>
+        <input type="submit" value="Submit Application">
+    </form>
+</div>
+<!--------------------------------------------- Footer ------------------------------------------------------------------>
+<footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 LoanPro. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
